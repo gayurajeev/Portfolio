@@ -1,0 +1,30 @@
+name: my_portfolio
+description: A portfolio website in Flutter
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  go_router: ^10.0.2
+  cupertino_icons: ^1.0.8
+  url_launcher: ^6.1.7
+
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/certificate1.png
+    - assets/certificate2.png
+
