@@ -153,7 +153,7 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 10),
             Text(
               "Industrial Engineering student and an Aspiring Data Analyst",
-              style: TextStyle(fontSize: 18, color: Colors.pink[200]),
+              style: TextStyle(fontSize: 18, color: Colors.white),
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 50),
@@ -162,7 +162,7 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 10),
             Text(
               "These are the keys to unlock the power of data",
-              style: TextStyle(fontSize: 16, color: Colors.pink[200]),
+              style: TextStyle(fontSize: 16, color: Colors.white),
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 30),
@@ -271,13 +271,41 @@ https://github.com/gayurajeev/Retail-Sales-SQL
                       ProjectCard(
                         title: 'Coffee Sales Dashboard',
                         tools: 'Excel',
-                        onTap: () => Navigator.pushNamed(context, '/projects', arguments: {
-                          'title': 'Coffee Sales Dashboard',
-                          'description': 'Built Excel dashboard to visualize coffee sales by region and segment.',
-                          'methodology': 'Used pivot tables, slicers, charts, and conditional formatting.',
-                          'summary': 'Enabled better marketing decisions through insights.',
-                        }),
+                        onTap: () => Navigator.pushNamed(
+                          context,
+                          '/projects',
+                          arguments: {
+                            'title':  '☕ Coffee Sales Dashboard (Excel Project)',
+                            'description': '''
+This project involves building an interactive Excel dashboard to analyze coffee sales data across multiple countries. It demonstrates proficiency in data cleaning, advanced Excel functions like XLOOKUP, pivot tables, and interactive visualizations using slicers and charts. The goal was to derive insights into regional sales trends and product performance.
+''',
+                            'toolsUsed': 'Microsoft Excel (XLOOKUP, Pivot Tables, Pivot Charts, Slicers)',
+                            'methodology': '''
+• Data Cleaning:
+  - Removed duplicates, standardized column headers, and formatted data types for consistency
+  - Split and combined fields where necessary to support further analysis
+
+• Data Enrichment with XLOOKUP:
+  - Used XLOOKUP function to merge additional fields like region/customer details
+  - Created dynamic references for flexible data analysis
+
+• Exploratory Data Analysis:
+  - Built pivot tables to summarize sales by country, product, and date
+  - Designed visualizations showing total sales by country and top performers
+
+• Interactive Dashboard:
+  - Implemented slicers for intuitive data filtering
+  - Used conditional formatting to highlight key metrics
+  - Organized layout for optimal user experience
+''',
+                            'summary': '''
+This Excel dashboard provides actionable insights into coffee sales performance across different regions. The interactive features allow stakeholders to explore data dynamically and identify business opportunities. The project showcases advanced Excel skills in data transformation, analysis, and visual presentation - valuable for any data-driven business role.
+''',
+                            'githubLink': 'https://github.com/gayurajeev/Excel-Dashboard',
+                          },
+                        ),
                       ),
+
                     ],
                   ),
                 ],
@@ -441,7 +469,7 @@ class ProjectsPage extends StatelessWidget {
       children: [
         Text(title, style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600, color: Colors.pink[300])),
         SizedBox(height: 8),
-        Text(content ?? '', style: TextStyle(fontSize: 16, color: Colors.pink[200], height: 1.6)),
+        Text(content ?? '', style: TextStyle(fontSize: 16, color: Colors.white, height: 1.6)),
         SizedBox(height: 20),
       ],
     );
@@ -465,7 +493,7 @@ class AboutPage extends StatelessWidget {
               "I'm Gayathry Rajeev, a passionate learner and aspiring Data Analyst currently pursuing B.Tech in Industrial Engineering.\n\n"
                   "I thrive at the intersection of technology and insight, and I believe data has the power to transform industries and improve lives. "
                   "I'm always eager to explore new tools, technologies, and meaningful projects that drive positive impact.",
-              style: TextStyle(fontSize: 16, color: Colors.pink[200], height: 1.6),
+              style: TextStyle(fontSize: 16, color: Colors.white, height: 1.6),
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 40),
@@ -521,7 +549,7 @@ class AboutPage extends StatelessWidget {
                 Text(title, style
                     : TextStyle(fontSize: 18, fontWeight: FontWeight.w600, color: Colors.pink[300])),
                 SizedBox(height: 6),
-                Text(content, style: TextStyle(fontSize: 15, height: 1.6, color: Colors.pink[200])),
+                Text(content, style: TextStyle(fontSize: 15, height: 1.6, color: Colors.white)),
               ],
             ),
           ),
